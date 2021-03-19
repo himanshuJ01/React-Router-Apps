@@ -1,12 +1,16 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './App.css';
 
-export default  class Home extends React.Component{
-    render(){
+const Home =() => {
+    const history = useHistory()
         return(
-            <div>
+            <div >
                 <h1>Home....</h1>
+                <button class="btn waves-effect waves-light" onClick={()=> history.push('/About')}>Navigate to AboutUS
+                </button>
             </div>
         )
     }
-}
+ 
+    export default Home;

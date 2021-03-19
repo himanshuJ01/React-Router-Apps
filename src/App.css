@@ -1,10 +1,11 @@
 .App {
   text-align: center;
+ 
 }
 
 
 
-div {
+.div {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
